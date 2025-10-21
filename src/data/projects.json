@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "titulo": "Portfolio Personal",
+    "descripcion": "Portfolio desarrollado con React y TypeScript para mostrar mis proyectos.",
+    "imagen": "https://via.placeholder.com/400x300",
+    "tecnologias": ["React", "TypeScript", "Bootstrap"],
+    "repositorio": "https://github.com/tu-usuario/portfolio",
+    "fecha": "2024-10-20"
+  },
+  {
+    "id": 2,
+    "titulo": "E-commerce",
+    "descripcion": "Tienda online con carrito de compras y sistema de pagos.",
+    "imagen": "https://via.placeholder.com/400x300",
+    "tecnologias": ["React", "Node.js", "MongoDB"],
+    "demoLink": "https://ejemplo.com",
+    "fecha": "2024-09-15"
+  },
+  {
+    "id": 3,
+    "titulo": "Blog Personal",
+    "descripcion": "Blog con sistema de comentarios y categorías.",
+    "imagen": "https://via.placeholder.com/400x300",
+    "tecnologias": ["Next.js", "TypeScript", "Tailwind"],
+    "repositorio": "https://github.com/tu-usuario/blog",
+    "fecha": "2024-08-10"
+  }
+]
