@@ -265,6 +265,8 @@ Este proyecto es de código abierto para fines educativos.
 
 **Desarrollado para DSY1104 - Desarrollo Full Stack II**
 
-**Duoc UC - 2024**
+**Duoc UC - 2025**
+
+**Creado por: Profesor Sting Adams**
 
 </div>

@@ -163,4 +163,6 @@ npm install bootstrap react-bootstrap
 
 **¿Listo? Ejecuta `npm start` y empieza a personalizar! 🚀**
 
+**Creado por: Profesor Sting Adams - Duoc UC 2025**
+
 </div>
