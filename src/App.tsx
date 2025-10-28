@@ -1,26 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/App.css';
 
-import Hero from './components/Hero';
-import Projects from './components/Projects';
-import Footer from './components/Footer';
-
-import profileData from './data/profile.json';
-import projectsData from './data/projects.json';
-
-import { Profile } from './types/Profile';
-import { Project } from './types/Project';
+import NavigationBar from './components/Navbar';
+import Portfolio from './components/Portfolio';
+import TiendaTech from './components/TiendaTech';
+import Guias from './components/Guias';
 
 function App() {
-  const profile: Profile = profileData;
-  const projects: Project[] = projectsData;
+  const [currentPage, setCurrentPage] = useState<string>('portfolio');
+
+  const handleNavigate = (page: string) => {
+    setCurrentPage(page);
+  };
+
+  const renderCurrentPage = () => {
+    switch (currentPage) {
+      case 'portfolio':
+        return <Portfolio />;
+      case 'tienda':
+        return <TiendaTech />;
+      case 'guias':
+        return <Guias />;
+      default:
+        return <Portfolio />;
+    }
+  };
 
   return (
     <div className="App">
-      <Hero profile={profile} />
-      <Projects projects={projects} />
-      <Footer />
+      <NavigationBar onNavigate={handleNavigate} currentPage={currentPage} />
+      {renderCurrentPage()}
     </div>
   );
 }
